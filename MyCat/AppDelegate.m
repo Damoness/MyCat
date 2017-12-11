@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ActivityViewController.h"
+#import "LoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -33,9 +34,9 @@
     
     
     ActivityViewController *activityVC = [[ActivityViewController alloc]init];
+    LoginViewController *loginVC = [LoginViewController new];
     
-    
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:activityVC];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginVC];
     
     
     return nav;

@@ -17,6 +17,8 @@
 		9C9F110F1FDD20DF006CBA3A /* RepositoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F110E1FDD20DF006CBA3A /* RepositoryModel.m */; };
 		9C9F11131FDD21E7006CBA3A /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F11111FDD21E7006CBA3A /* ActivityCell.m */; };
 		9C9F11141FDD21E7006CBA3A /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F11121FDD21E7006CBA3A /* ActivityCell.xib */; };
+		9C9F111E1FDD7EE0006CBA3A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F111D1FDD7EE0006CBA3A /* LoginViewController.m */; };
+		9C9F11221FDD82B5006CBA3A /* WebLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F11201FDD82B5006CBA3A /* WebLoginViewController.m */; };
 		AC149E34F99D477CE1215CCA /* libPods-MyCat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B26EAFDA3047A747D0EFD91 /* libPods-MyCat.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,10 @@
 		9C9F11111FDD21E7006CBA3A /* ActivityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
 		9C9F11121FDD21E7006CBA3A /* ActivityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
 		9C9F11151FDD269C006CBA3A /* MyCat-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCat-PrefixHeader.pch"; sourceTree = "<group>"; };
+		9C9F111C1FDD7EE0006CBA3A /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9C9F111D1FDD7EE0006CBA3A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9C9F111F1FDD82B5006CBA3A /* WebLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebLoginViewController.h; sourceTree = "<group>"; };
+		9C9F11201FDD82B5006CBA3A /* WebLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebLoginViewController.m; sourceTree = "<group>"; };
 		D7B6919DD4727321BCE18586 /* Pods-MyCat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyCat/Pods-MyCat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +136,10 @@
 			children = (
 				9C9F11031FDD16DD006CBA3A /* ActivityViewController.h */,
 				9C9F11041FDD16DD006CBA3A /* ActivityViewController.m */,
+				9C9F111C1FDD7EE0006CBA3A /* LoginViewController.h */,
+				9C9F111D1FDD7EE0006CBA3A /* LoginViewController.m */,
+				9C9F111F1FDD82B5006CBA3A /* WebLoginViewController.h */,
+				9C9F11201FDD82B5006CBA3A /* WebLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9F111E1FDD7EE0006CBA3A /* LoginViewController.m in Sources */,
 				9C9F11091FDD207A006CBA3A /* ActivityModel.m in Sources */,
 				9C9F10FA1FDD15DE006CBA3A /* main.m in Sources */,
 				9C9F11051FDD16DD006CBA3A /* ActivityViewController.m in Sources */,
+				9C9F11221FDD82B5006CBA3A /* WebLoginViewController.m in Sources */,
 				9C9F110F1FDD20DF006CBA3A /* RepositoryModel.m in Sources */,
 				9C9F10EC1FDD15DE006CBA3A /* AppDelegate.m in Sources */,
 				9C9F11131FDD21E7006CBA3A /* ActivityCell.m in Sources */,
