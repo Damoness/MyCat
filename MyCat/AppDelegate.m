@@ -36,7 +36,7 @@
     ActivityViewController *activityVC = [[ActivityViewController alloc]init];
     LoginViewController *loginVC = [LoginViewController new];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:activityVC];
     
     
     return nav;

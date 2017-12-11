@@ -21,4 +21,15 @@
     // Configure the view for the selected state
 }
 
+-(void)loadData:(id<ActivityCellAdapterProtocol>)data{
+    
+    
+    [self.myImageView sd_setImageWithURL:data.imageURL];
+    self.actorName.text = data.actorNameStr;
+    self.repoLabel.text = data.repoStr;
+    self.timeLabel.text = data.timeStr;
+    
+    
+}
+
 @end

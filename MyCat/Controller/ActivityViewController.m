@@ -9,7 +9,7 @@
 #import "ActivityViewController.h"
 #import "ActivityCell.h"
 #import "ActivityModel.h"
-
+#import "ActivityCellAdapter.h"
 
 static NSInteger NUM_OF_PAGE =  30;
 static NSString *Activity_Url = @"https://api.github.com/users/damoness/received_events/public?page=%d&per_page=%d&token=5de98f97287c3a24f726c4a3d9b4a380e746baef";
@@ -204,14 +204,21 @@ typedef void (^completionblock)(id responseObject, NSError *error) ;
     ActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:Activity_Cell_Identifier];
     
     ActivityModel *model = self.dataArray[indexPath.row];
-    
-    cell.actorName.text = model.actor.display_login;
-    
-    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:model.actor.avatar_url] completed:nil];
-    
-    cell.repoLabel.text = model.repo.name;
-    cell.timeLabel.text = model.created_at;
 
+//    cell.actorName.text = model.actor.display_login;
+//
+//    [cell.myImageView sd_setImageWithURL:[NSURL URLWithString:model.actor.avatar_url] completed:nil];
+//
+//    cell.repoLabel.text = model.repo.name;
+//    cell.timeLabel.text = model.created_at;
+    
+    
+    //采用适配器模式
+    ActivityCellAdapter *cellAdapter = [[ActivityCellAdapter alloc]initWithData:model];
+    [cell loadData:cellAdapter];
+    
+    
+    
     return cell;
     
     

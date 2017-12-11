@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C8EB5D41FDEDC3A0049884F /* ActivityCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8EB5D31FDEDC3A0049884F /* ActivityCellAdapter.m */; };
 		9C9F10EC1FDD15DE006CBA3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F10EB1FDD15DE006CBA3A /* AppDelegate.m */; };
 		9C9F10F41FDD15DE006CBA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F10F31FDD15DE006CBA3A /* Assets.xcassets */; };
 		9C9F10F71FDD15DE006CBA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9F10F51FDD15DE006CBA3A /* LaunchScreen.storyboard */; };
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		5B26EAFDA3047A747D0EFD91 /* libPods-MyCat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyCat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E593C177A2F5E7B8DCE204 /* Pods-MyCat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyCat/Pods-MyCat.release.xcconfig"; sourceTree = "<group>"; };
+		9C8EB5D11FDED94E0049884F /* ActivityCellAdapterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityCellAdapterProtocol.h; sourceTree = "<group>"; };
+		9C8EB5D21FDEDC3A0049884F /* ActivityCellAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityCellAdapter.h; sourceTree = "<group>"; };
+		9C8EB5D31FDEDC3A0049884F /* ActivityCellAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityCellAdapter.m; sourceTree = "<group>"; };
 		9C9F10E71FDD15DE006CBA3A /* MyCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9F10EA1FDD15DE006CBA3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C9F10EB1FDD15DE006CBA3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +128,9 @@
 		9C9F11011FDD1649006CBA3A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9C8EB5D11FDED94E0049884F /* ActivityCellAdapterProtocol.h */,
+				9C8EB5D21FDEDC3A0049884F /* ActivityCellAdapter.h */,
+				9C8EB5D31FDEDC3A0049884F /* ActivityCellAdapter.m */,
 				9C9F11101FDD21E7006CBA3A /* ActivityCell.h */,
 				9C9F11111FDD21E7006CBA3A /* ActivityCell.m */,
 				9C9F11121FDD21E7006CBA3A /* ActivityCell.xib */,
@@ -304,6 +311,7 @@
 				9C9F110F1FDD20DF006CBA3A /* RepositoryModel.m in Sources */,
 				9C9F10EC1FDD15DE006CBA3A /* AppDelegate.m in Sources */,
 				9C9F11131FDD21E7006CBA3A /* ActivityCell.m in Sources */,
+				9C8EB5D41FDEDC3A0049884F /* ActivityCellAdapter.m in Sources */,
 				9C9F110C1FDD2093006CBA3A /* ActorModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

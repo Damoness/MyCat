@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ActivityCellAdapterProtocol.h"
 
 static NSString *Activity_Cell_Identifier = @"Activity_Cell_Identifier";
+
 
 @interface ActivityCell : UITableViewCell
 
@@ -18,6 +19,8 @@ static NSString *Activity_Cell_Identifier = @"Activity_Cell_Identifier";
 @property (weak, nonatomic) IBOutlet UILabel *repoLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
+
+-(void)loadData:(id<ActivityCellAdapterProtocol>)data;
 
 
 @end
